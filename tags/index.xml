@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | Yicheng Chen</title>
+    <link>https://Amos-Chen98.github.io/tags/</link>
+      <atom:link href="https://Amos-Chen98.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://Amos-Chen98.github.io/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
+      <title>Tags</title>
+      <link>https://Amos-Chen98.github.io/tags/</link>
+    </image>
+    
+  </channel>
+</rss>

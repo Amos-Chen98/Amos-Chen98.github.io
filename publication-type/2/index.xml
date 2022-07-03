@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Yicheng Chen</title>
+    <link>https://Amos-Chen98.github.io/publication-type/2/</link>
+      <atom:link href="https://Amos-Chen98.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://Amos-Chen98.github.io/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
+      <title>2</title>
+      <link>https://Amos-Chen98.github.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Multi-UAV Mobile Edge Computing and Path Planning Platform Based on Reinforcement Learning</title>
+      <link>https://Amos-Chen98.github.io/publication/mec/</link>
+      <pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://Amos-Chen98.github.io/publication/mec/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Some notations
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
