@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>1 | Yicheng Chen</title>
-    <link>https://amos-chen98.github.io/publication-type/1/</link>
-      <atom:link href="https://amos-chen98.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://yichengchen.com/publication-type/1/</link>
+      <atom:link href="https://yichengchen.com/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 16 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://amos-chen98.github.io/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
+      <url>https://yichengchen.com/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
-      <link>https://amos-chen98.github.io/publication-type/1/</link>
+      <link>https://yichengchen.com/publication-type/1/</link>
     </image>
     
     <item>
       <title>Adaptively Dynamic RRT*-Connect: Path Planning for UAVs Against Dynamic Obstacles</title>
-      <link>https://amos-chen98.github.io/publication/bachelor_thesis/</link>
+      <link>https://yichengchen.com/publication/adrrt_star/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://amos-chen98.github.io/publication/bachelor_thesis/</guid>
+      <guid>https://yichengchen.com/publication/adrrt_star/</guid>
       <description>&lt;p&gt;At the conference &lt;em&gt;&lt;a href=&#34;https://www.cacre.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CACRE&lt;/a&gt; 2022&lt;/em&gt;, I was honored the &lt;em&gt;Best Presenter Award&lt;/em&gt; for an excellent oral presentation.&lt;/p&gt;
 &lt;p&gt;
 

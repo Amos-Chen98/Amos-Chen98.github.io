@@ -2,57 +2,411 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Yicheng Chen</title>
-    <link>https://amos-chen98.github.io/project/</link>
-      <atom:link href="https://amos-chen98.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://yichengchen.com/project/</link>
+      <atom:link href="https://yichengchen.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 11 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 04 Aug 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://amos-chen98.github.io/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
+      <url>https://yichengchen.com/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
-      <link>https://amos-chen98.github.io/project/</link>
+      <link>https://yichengchen.com/project/</link>
     </image>
     
     <item>
-      <title>Cooperative Online Trajectory Planning for Autonomous Aerial Robotics Swarm</title>
-      <link>https://amos-chen98.github.io/project/master_thesis/</link>
-      <pubDate>Fri, 11 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://amos-chen98.github.io/project/master_thesis/</guid>
-      <description>&lt;!-- Aim: (1) Full autonomy: Fully onboard perception, self-positioning, planning, and control. (2) Online: Real-time flying in
-unknown environments. (3) Cooperation: Multiple drones to perform cooperative tasks, such as search and rescue. --&gt;
-&lt;h2 id=&#34;news&#34;&gt;News&lt;/h2&gt;
+      <title>Aeriva: A Mini Autonomous Quadrotor Platform</title>
+      <link>https://yichengchen.com/project/aeriva/</link>
+      <pubDate>Fri, 04 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/project/aeriva/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Aeriva&lt;/strong&gt; - This name is a combination of &amp;ldquo;aero&amp;rdquo; (meaning air) and &amp;ldquo;diva&amp;rdquo; (suggesting a stylish and confident personality).&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In March 2023, I began to design, assemble, and test this drone from scratch. So far, four drones of this type have been made and used in various scientific research and competitions in my lab.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Agile and safe&lt;/strong&gt;: Aeriva is built upon a 3.5-inch cinewhoop frame with Kakute H7 mini flight controller, making it exceptionally agile, compact and safe.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;High computing performance&lt;/strong&gt;: Aeriva is equipped with NVIDIA Jetson Orin NX, facilitating it with strong onboard computing capabilities.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;specifications&#34;&gt;Specifications&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Specs&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Computer&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;NVIDIA Jetson Orin NX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Camera&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Intel RealSense D435&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Stack&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Kakute H7 mini + Tekko32 F4 4in1 mini 45A ESC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Dimension&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;152mm motor-to-motor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Motors&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;RCinpower GTS V3 2104-T-1800kv&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Propellers&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Gemfan D90S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Battery&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6S 1200mah 150C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;accomplishments-based-on-aeriva&#34;&gt;Accomplishments based on Aeriva&lt;/h2&gt;
+&lt;p&gt;Scientific research:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;November 11, 2022&lt;/strong&gt;. That&amp;rsquo;s it, this project is started!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://arxiv.org/abs/2309.10683&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Learning-Initialized Trajectory Planning in Unknown Environments&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;project-objectives&#34;&gt;Project objectives&lt;/h2&gt;
-&lt;p&gt;This project aims to address the issue: How to enable agile flight for aerial robotics swarm in complex environments? The main considerations of this projects include:&lt;/p&gt;
+&lt;p&gt;Competitions:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Full autonomy&lt;/strong&gt;: Fully onboard perception, localization, planning, and control.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Online&lt;/strong&gt;: Real-time flying in unknown environments.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cooperation&lt;/strong&gt;: Multiple drones to perform cooperative tasks, such as search and rescue.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;roadmap&#34;&gt;Roadmap&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;WP1: Trajectory parameterization&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Parameterize trajectories in a spatial-temporal-decoupled form to support independent optimization on the spatial and temporal profile of the trajectory.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;WP2: Distributed trajectory planning&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Build an optimization framework considering control effort, execution time, dynamic feasibility, obstacle avoidance, and swarm reciprocal avoidance. And use gradient-based solvers to solve the problem.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;WP3: Real-world experiments&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Build quadrotors equipped with depth cameras, Intel NUC, and the Pixhawk controller to conduct real-world experiments.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;../huashan_uav_challenge/&#34;&gt;Huashan UAV challenge&lt;/a&gt;&lt;/strong&gt;: I led a team of six students and won the championship.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
+      <title>Huashan UAV Challenge - Champion</title>
+      <link>https://yichengchen.com/project/huashan_uav_challenge/</link>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/project/huashan_uav_challenge/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The Huashan UAV Challenge is a national competition for college students in China. The competition is held in the Huashan Mountain, Shaanxi Province. The 2023 Huashan UAV Challenge is the first time that the competition has been held. This competition requires two drones to bypass the threat area in the field and reach the target point simultaneously. The drones get their positions using UWB.&lt;/p&gt;
+&lt;h2 id=&#34;my-role&#34;&gt;My Role&lt;/h2&gt;
+&lt;p&gt;I led a team of six students. I contirbuted to the system architecture of the drones, including the hardware and software.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/huashan_uav_challenge/images/meeting_hu4173fd249bbd538672c432cbc53c604a_399012_a5e74221ccca87ebaf5fe6c30b9b5ab2.webp 400w,
+               /project/huashan_uav_challenge/images/meeting_hu4173fd249bbd538672c432cbc53c604a_399012_89155d148d09db78f851e8fe7b8bcfb7.webp 760w,
+               /project/huashan_uav_challenge/images/meeting_hu4173fd249bbd538672c432cbc53c604a_399012_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/huashan_uav_challenge/images/meeting_hu4173fd249bbd538672c432cbc53c604a_399012_a5e74221ccca87ebaf5fe6c30b9b5ab2.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;424&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ First meeting of the team. I was sharing my ideas about the hardware architecture of the drones.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/huashan_uav_challenge/images/test_allnight_hub01433c22deb6f2d20f35b2df153d397_1075508_4bf3b6593878e23e238160d6911fac1c.webp 400w,
+               /project/huashan_uav_challenge/images/test_allnight_hub01433c22deb6f2d20f35b2df153d397_1075508_7857963b9ed5a4fa2e82bbb34af205d1.webp 760w,
+               /project/huashan_uav_challenge/images/test_allnight_hub01433c22deb6f2d20f35b2df153d397_1075508_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/huashan_uav_challenge/images/test_allnight_hub01433c22deb6f2d20f35b2df153d397_1075508_4bf3b6593878e23e238160d6911fac1c.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;362&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ The last night before the competition. We were testing the drones all night.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/huashan_uav_challenge/images/challenge_process_hub9602c678a2dca80174bc148567b201e_1842574_ba534ab98606f483e7e6d7cd03492449.webp 400w,
+               /project/huashan_uav_challenge/images/challenge_process_hub9602c678a2dca80174bc148567b201e_1842574_4d017ffe05fbf2f79d963cfdbe9267ac.webp 760w,
+               /project/huashan_uav_challenge/images/challenge_process_hub9602c678a2dca80174bc148567b201e_1842574_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/huashan_uav_challenge/images/challenge_process_hub9602c678a2dca80174bc148567b201e_1842574_ba534ab98606f483e7e6d7cd03492449.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;341&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ One moment during the competition. The drones were flying to the target point.&lt;/p&gt;
+&lt;h2 id=&#34;achievements&#34;&gt;Achievements&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/huashan_uav_challenge/images/certificate_hu6a8efd3a67c78b57c7ef6b8ac1ffba6b_1842676_3e0094a5e72bf0d117fcd92731c8e577.webp 400w,
+               /project/huashan_uav_challenge/images/certificate_hu6a8efd3a67c78b57c7ef6b8ac1ffba6b_1842676_1337723678413ef9bc7c9907e82c0150.webp 760w,
+               /project/huashan_uav_challenge/images/certificate_hu6a8efd3a67c78b57c7ef6b8ac1ffba6b_1842676_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/huashan_uav_challenge/images/certificate_hu6a8efd3a67c78b57c7ef6b8ac1ffba6b_1842676_3e0094a5e72bf0d117fcd92731c8e577.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;434&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ The certificate of the 1st place in the 2023 Huashan UAV Challenge.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/huashan_uav_challenge/images/buaa_tech_exhibition_hu97e913956c3d1a4a5e5e76c5c2f20ca3_493375_3502b4a077bf771f803b5bc36d847b3f.webp 400w,
+               /project/huashan_uav_challenge/images/buaa_tech_exhibition_hu97e913956c3d1a4a5e5e76c5c2f20ca3_493375_356548114152a9c239f22ae86a6a23f6.webp 760w,
+               /project/huashan_uav_challenge/images/buaa_tech_exhibition_hu97e913956c3d1a4a5e5e76c5c2f20ca3_493375_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/huashan_uav_challenge/images/buaa_tech_exhibition_hu97e913956c3d1a4a5e5e76c5c2f20ca3_493375_3502b4a077bf771f803b5bc36d847b3f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;567&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ The drones were exhibited in the 2023 Beihang University Technology Exhibition.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SLAM Practice</title>
+      <link>https://yichengchen.com/project/slam_practice/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/project/slam_practice/</guid>
+      <description>&lt;p&gt;I have implemented some basic SLAM algorithms on unmanned ground vehicles (UGVs) including a TurtleBot and an Ackerman mini vehicle.&lt;/p&gt;
+&lt;h2 id=&#34;turtlebot&#34;&gt;TurtleBot&lt;/h2&gt;
+&lt;p&gt;I have implemented G-mapping on the TurtleBot.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/slam_practice/images/turtlebot_huf0cb0ab039e15a2bfa65683665c3656c_2642834_3c79c6840c00e492a555e0b85377901a.webp 400w,
+               /project/slam_practice/images/turtlebot_huf0cb0ab039e15a2bfa65683665c3656c_2642834_044d151a83d768dda9cceabcbd3fb580.webp 760w,
+               /project/slam_practice/images/turtlebot_huf0cb0ab039e15a2bfa65683665c3656c_2642834_1200x1200_fit_q100_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/slam_practice/images/turtlebot_huf0cb0ab039e15a2bfa65683665c3656c_2642834_3c79c6840c00e492a555e0b85377901a.webp&#34;
+               width=&#34;725&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ Running G-mapping on the TurtleBot&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/slam_practice/images/turtlebot_slam_hu311a4ee7a669bd6ddebb55b47b05540e_407806_a358cff52255449564e4b39c25580f88.webp 400w,
+               /project/slam_practice/images/turtlebot_slam_hu311a4ee7a669bd6ddebb55b47b05540e_407806_8275da6f2156a2e59dfccbaed315e459.webp 760w,
+               /project/slam_practice/images/turtlebot_slam_hu311a4ee7a669bd6ddebb55b47b05540e_407806_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/slam_practice/images/turtlebot_slam_hu311a4ee7a669bd6ddebb55b47b05540e_407806_a358cff52255449564e4b39c25580f88.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;405&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ The map generated by G-mapping&lt;/p&gt;
+&lt;h2 id=&#34;ackerman-mini-vehicle&#34;&gt;Ackerman mini vehicle&lt;/h2&gt;
+&lt;p&gt;I have implemented Gmapping and RTAB-Map on the Ackerman mini vehicle. I also implemented a motion planning algorithm based on Dijkstra with TEB planner to navigate it through obstacles.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/slam_practice/images/ackerman_hardware_hu275f4694e5b137a022e815a8e3e665f3_3025695_c48727f1b5fadfc10da4d6225c8f2f93.webp 400w,
+               /project/slam_practice/images/ackerman_hardware_hu275f4694e5b137a022e815a8e3e665f3_3025695_7f35e1f5a5cc62029718c92b7224352d.webp 760w,
+               /project/slam_practice/images/ackerman_hardware_hu275f4694e5b137a022e815a8e3e665f3_3025695_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/project/slam_practice/images/ackerman_hardware_hu275f4694e5b137a022e815a8e3e665f3_3025695_c48727f1b5fadfc10da4d6225c8f2f93.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;436&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ The ackerman mini vehicle&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://yichengchen.com/project/slam_practice/images/RTAB_mapping.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ Running RTAB-Map on the Ackerman mini vehicle&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://yichengchen.com/project/slam_practice/images/navigation_on_map.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+▲ Navigating the Ackerman mini vehicle through obstacles using Dijkstra with TEB planner&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling and Simulation for Quadcopter</title>
+      <link>https://yichengchen.com/project/quadcopter_modeling/</link>
+      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/project/quadcopter_modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Radiograph Classification for Diagnosing COVID-19</title>
-      <link>https://amos-chen98.github.io/project/covid_classification/</link>
+      <link>https://yichengchen.com/project/covid_classification/</link>
       <pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://amos-chen98.github.io/project/covid_classification/</guid>
+      <guid>https://yichengchen.com/project/covid_classification/</guid>
       <description>&lt;h2 id=&#34;aim&#34;&gt;Aim&lt;/h2&gt;
 &lt;p&gt;Use machine learning approaches to help preliminary diagnosis of chest radiographs: classify radiographs into 3 classes
 – COVID, normal, and viral pneumonia with the highest possible accuracy.&lt;/p&gt;
