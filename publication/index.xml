@@ -5,7 +5,7 @@
     <link>https://yichengchen.com/publication/</link>
       <atom:link href="https://yichengchen.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 19 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yichengchen.com/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -13,18 +13,103 @@
     </image>
     
     <item>
-      <title>Learning-Initialized Trajectory Planning in Unknown Environments</title>
-      <link>https://yichengchen.com/publication/lit_planner/</link>
-      <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://yichengchen.com/publication/lit_planner/</guid>
+      <title>Hierarchical Language Models for Semantic Navigation and Manipulation in an Aerial-Ground Robotic System</title>
+      <link></link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid></guid>
       <description></description>
     </item>
     
     <item>
+      <title>Learning to Initialize Trajectory Optimization for Vision-Based Autonomous Flight in Unknown Environments</title>
+      <link>https://yichengchen.com/publication/neo-planner/</link>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/publication/neo-planner/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://yichengchen.com/publication/neo-planner/figures/sim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;small style=&#34;margin-top: -25px; display: block; line-height: 1.5;&#34;&gt;&lt;strong&gt;Examples of neural network predicted trajectories and corresponding optimized results.&lt;/strong&gt; The dashed lines with blue spherical markers represent neural network predictions, while solid lines with green spherical markers denote optimized trajectories. The network usually outputs near-optimal trajectories.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://yichengchen.com/publication/neo-planner/figures/exp.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;small style=&#34;margin-top: -25px; display: block; line-height: 1.5;&#34;&gt;&lt;strong&gt;A real-world demonstration of fully autonomous flight using the proposed Neural-Enhanced Trajectory Planner (NEO-Planner).&lt;/strong&gt; The drone has no prior knowledge of the environment, and the entire software stack runs onboard in real-time.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /publication/neo-planner/figures/system_overview_hu68ede0c8efa6992d669b528cff1811e8_921262_05173e154014c1c8281487f98a90fd43.webp 400w,
+               /publication/neo-planner/figures/system_overview_hu68ede0c8efa6992d669b528cff1811e8_921262_f69cd4cf29f74076a8b1ecd72aaff211.webp 760w,
+               /publication/neo-planner/figures/system_overview_hu68ede0c8efa6992d669b528cff1811e8_921262_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/publication/neo-planner/figures/system_overview_hu68ede0c8efa6992d669b528cff1811e8_921262_05173e154014c1c8281487f98a90fd43.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;322&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;small style=&#34;margin-top: -25px; display: block; line-height: 1.5;&#34;&gt;&lt;strong&gt;System overview.&lt;/strong&gt; The NEO-Planner leverages a neural network to generate high-quality initial trajectories from onboard observations and subsequently conducts spatial-temporal optimization on the neural network&amp;rsquo;s output. The NN-Planner is trained using supervised learning, with training cases provided by an expert planner based on a standard mapping-planning-control stack.&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Adaptively Dynamic RRT*-Connect: Path Planning for UAVs Against Dynamic Obstacles</title>
-      <link>https://yichengchen.com/publication/adrrt_star/</link>
+      <link>https://yichengchen.com/publication/ad-rrtstar/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://yichengchen.com/publication/adrrt_star/</guid>
+      <guid>https://yichengchen.com/publication/ad-rrtstar/</guid>
       <description>&lt;p&gt;At the conference &lt;em&gt;&lt;a href=&#34;https://www.cacre.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CACRE&lt;/a&gt; 2022&lt;/em&gt;, I was honored the &lt;em&gt;Best Presenter Award&lt;/em&gt; for an excellent oral presentation.&lt;/p&gt;
 &lt;p&gt;
 
