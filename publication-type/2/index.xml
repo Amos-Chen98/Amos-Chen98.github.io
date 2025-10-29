@@ -5,12 +5,20 @@
     <link>https://yichengchen.com/publication-type/2/</link>
       <atom:link href="https://yichengchen.com/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 08 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yichengchen.com/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://yichengchen.com/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>Hierarchical Language Models for Semantic Navigation and Manipulation in an Aerial-Ground Robotic System</title>
+      <link>https://yichengchen.com/publication/hierarchical-language-models/</link>
+      <pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/publication/hierarchical-language-models/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Multi-UAV Mobile Edge Computing and Path Planning Platform Based on Reinforcement Learning</title>
