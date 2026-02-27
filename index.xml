@@ -5,12 +5,120 @@
     <link>https://yichengchen.com/</link>
       <atom:link href="https://yichengchen.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Yicheng Chen</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yichengchen.com/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
       <title>Yicheng Chen</title>
       <link>https://yichengchen.com/</link>
     </image>
+    
+    <item>
+      <title>Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments</title>
+      <link>https://yichengchen.com/publication/hierarchical-multi-link-planner/</link>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/publication/hierarchical-multi-link-planner/</guid>
+      <description>
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/GOcorcrLGb4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_5a05333362797fcb76558eb39f3510a5.webp 400w,
+               /publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_306d01be6f7d445dbd3eb219d43f2d13.webp 760w,
+               /publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_5a05333362797fcb76558eb39f3510a5.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;296&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;small style=&#34;margin-top: -25px; display: block; line-height: 1.5;&#34;&gt;&lt;strong&gt;System overview.&lt;/strong&gt; The hierarchical trajectory planning framework decomposes the planning problem into independently solvable segments by introducing global anchor states, enabling parallel local planning. With clamped B-spline trajectory parameterization, continuity between adjacent segments is inherently maintained in the overall trajectory. Each segment is optimized in parallel with fully differential objective and constraint functions. The optimized local segments are directly concatenated in sequence to produce the final trajectory.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_6049be9c4fab02db6d2d8d862f2749d6.webp 400w,
+               /publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_fe304c2de699b16570e34fbf861e679e.webp 760w,
+               /publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_6049be9c4fab02db6d2d8d862f2749d6.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;387&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;small style=&#34;margin-top: -25px; display: block; line-height: 1.5;&#34;&gt;&lt;strong&gt;Simulation of a floating-base multi-link robot navigating through a confined environment with narrow passages.&lt;/strong&gt; (a) Illustration of the global anchor states, each specifying a complete robot configuration, with the global initial and target states serving as the first and last global anchor states. There were seven anchor states in total. (b) Snapshots of the robot along the flight trajectory. (c) Changing histories of the objective function for all six trajectory segments, where red dots mark the minimum values of the objective. (d) Desired trajectories of the root link position and yaw angle (top) and the joint angles (bottom), with background shading indicating different planning segments.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_f88f192035a68f36c06a13083a1e132c.webp 400w,
+               /publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_c1e3f10d1c4f5eea4a54fac6e8c785d0.webp 760w,
+               /publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://yichengchen.com/publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_f88f192035a68f36c06a13083a1e132c.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;233&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;small style=&#34;margin-top: -25px; display: block; line-height: 1.5;&#34;&gt;&lt;strong&gt;Evaluation with real-world point clouds under environment changes.&lt;/strong&gt; A handheld Livox Mid-360 LiDAR was used to capture the scene, and FAST-LIO was used to reconstruct two registered point clouds before and after the obstacles were rearranged. (a) Experimental scene. (b) Point cloud of the initial scene. (c) Online volumetric occupancy map reconstructed from (b) and used for the initial plan. (d) Updated occupancy map after switching the input to the second point cloud, where the original passage was blocked (red boxes). (e) Execution snapshots in Gazebo (time was measured from the onset of motion): the robot started with the initial plan, the map update blocked the original passage at t = 17 s, replanning produced a new feasible trajectory at t = 19 s, and the robot switched to it and continued to the goal.&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Design, Modeling and Direction Control of a Wire-Driven Robotic Fish Based on a 2-DoF Crank-Slider Mechanism</title>
+      <link>https://yichengchen.com/publication/robotic-fish/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/publication/robotic-fish/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hierarchical Language Models for Semantic Navigation and Manipulation in an Aerial-Ground Robotic System</title>
@@ -515,14 +623,6 @@
 
 ▲ Navigating the Ackerman mini vehicle through obstacles using Dijkstra with TEB planner&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Modeling and Simulation for Quadcopter</title>
-      <link>https://yichengchen.com/project/quadcopter-modeling/</link>
-      <pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://yichengchen.com/project/quadcopter-modeling/</guid>
-      <description></description>
     </item>
     
     <item>

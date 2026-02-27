@@ -1,0 +1,1420 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Yicheng Chen" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A planning framework for floating-base multi-link robots that has been demonstrated on a real robot to generate continuous, collision-free, and dynamically feasible trajectories directly from raw point-cloud inputs, without relying on handcrafted obstacle models." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://yichengchen.com/publication/hierarchical-multi-link-planner/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.3a3c1ee59d97b4e6d76f2cb0f1d0e41f.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N37WQGYJPM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-N37WQGYJPM', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://yichengchen.com/publication/hierarchical-multi-link-planner/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Yicheng Chen" />
+  <meta property="og:url" content="https://yichengchen.com/publication/hierarchical-multi-link-planner/" />
+  <meta property="og:title" content="Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments | Yicheng Chen" />
+  <meta property="og:description" content="A planning framework for floating-base multi-link robots that has been demonstrated on a real robot to generate continuous, collision-free, and dynamically feasible trajectories directly from raw point-cloud inputs, without relying on handcrafted obstacle models." /><meta property="og:image" content="https://yichengchen.com/publication/hierarchical-multi-link-planner/featured.jpg" />
+    <meta property="twitter:image" content="https://yichengchen.com/publication/hierarchical-multi-link-planner/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2017-01-01T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2026-02-19T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yichengchen.com/publication/hierarchical-multi-link-planner/"
+  },
+  "headline": "Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments",
+  
+  "image": [
+    "https://yichengchen.com/publication/hierarchical-multi-link-planner/featured.jpg"
+  ],
+  
+  "datePublished": "2017-01-01T00:00:00Z",
+  "dateModified": "2026-02-19T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yicheng Chen"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yicheng Chen",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yichengchen.com/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "A planning framework for floating-base multi-link robots that has been demonstrated on a real robot to generate continuous, collision-free, and dynamically feasible trajectories directly from raw point-cloud inputs, without relying on handcrafted obstacle models."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments | Yicheng Chen</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9dea71ee8ed8cab4fdb11ac467c80ab2" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Yicheng Chen</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Yicheng Chen</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>About</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#featured_work"><span>Featured Work</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#moments"><span>Moments</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      Yicheng Chen</span>, <span >
+      Jinjie Li</span>, <span >
+      Haokun Liu</span>, <span >
+      Zicheng Luo</span>, <span >
+      Kotaro Kaneko</span>, <span >
+      Moju Zhao</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    February, 2026
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="http://arxiv.org/abs/2602.22459" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://youtu.be/GOcorcrLGb4" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 406px;">
+  <div style="position: relative">
+    <img src="/publication/hierarchical-multi-link-planner/featured_hufb1b3a583f80aafdc2ccd2bf6bb706e7_1889583_720x2500_fit_q100_h2_lanczos.webp" width="720" height="406" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Floating-base multi-link robots can change their shape during flight, making them well-suited for applications in confined environments such as autonomous inspection and search and rescue. However, trajectory planning for such systems remains an open challenge because the problem lies in a high-dimensional, constraint-rich space where collision avoidance must be addressed together with kinematic limits and dynamic feasibility. This work introduces a hierarchical trajectory planning framework that integrates global guidance with configuration-aware local optimization. First, we exploit the dual nature of these robots - the root link as a rigid body for guidance and the articulated joints for flexibility - to generate global anchor states that decompose the planning problem into tractable segments. Second, we design a local trajectory planner that optimizes each segment in parallel with differentiable objectives and constraints, systematically enforcing kinematic feasibility and maintaining dynamic feasibility by avoiding control singularities. Third, we implement a complete system that directly processes point-cloud data, eliminating the need for handcrafted obstacle models. Extensive simulations and real-world experiments confirm that this framework enables an articulated aerial robot to exploit its morphology for maneuvering that rigid robots cannot achieve. To the best of our knowledge, this is the first planning framework for floating-base multi-link robots that has been demonstrated on a real robot to generate continuous, collision-free, and dynamically feasible trajectories directly from raw point-cloud inputs, without relying on handcrafted obstacle models.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#2">
+              Journal article
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">IEEE Transactions on Automation Science and Engineering</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/GOcorcrLGb4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_5a05333362797fcb76558eb39f3510a5.webp 400w,
+               /publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_306d01be6f7d445dbd3eb219d43f2d13.webp 760w,
+               /publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_1200x1200_fit_q100_h2_lanczos_3.webp 1200w"
+               src="/publication/hierarchical-multi-link-planner/figures/system_overview_hu939d389b537fb01a13383b64325c5fe4_555600_5a05333362797fcb76558eb39f3510a5.webp"
+               width="760"
+               height="296"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+<small style="margin-top: -25px; display: block; line-height: 1.5;"><strong>System overview.</strong> The hierarchical trajectory planning framework decomposes the planning problem into independently solvable segments by introducing global anchor states, enabling parallel local planning. With clamped B-spline trajectory parameterization, continuity between adjacent segments is inherently maintained in the overall trajectory. Each segment is optimized in parallel with fully differential objective and constraint functions. The optimized local segments are directly concatenated in sequence to produce the final trajectory.</small></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_6049be9c4fab02db6d2d8d862f2749d6.webp 400w,
+               /publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_fe304c2de699b16570e34fbf861e679e.webp 760w,
+               /publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_1200x1200_fit_q100_h2_lanczos_3.webp 1200w"
+               src="/publication/hierarchical-multi-link-planner/figures/sim_example_hua91acbc619f7c0f3ac3c1eac1911c69e_1586239_6049be9c4fab02db6d2d8d862f2749d6.webp"
+               width="760"
+               height="387"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+<small style="margin-top: -25px; display: block; line-height: 1.5;"><strong>Simulation of a floating-base multi-link robot navigating through a confined environment with narrow passages.</strong> (a) Illustration of the global anchor states, each specifying a complete robot configuration, with the global initial and target states serving as the first and last global anchor states. There were seven anchor states in total. (b) Snapshots of the robot along the flight trajectory. (c) Changing histories of the objective function for all six trajectory segments, where red dots mark the minimum values of the objective. (d) Desired trajectories of the root link position and yaw angle (top) and the joint angles (bottom), with background shading indicating different planning segments.</small></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_f88f192035a68f36c06a13083a1e132c.webp 400w,
+               /publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_c1e3f10d1c4f5eea4a54fac6e8c785d0.webp 760w,
+               /publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_1200x1200_fit_q100_h2_lanczos_3.webp 1200w"
+               src="/publication/hierarchical-multi-link-planner/figures/real_world_pcl_test_hucfbc91c5b776c0a47bdf221c7318f9d1_2295910_f88f192035a68f36c06a13083a1e132c.webp"
+               width="760"
+               height="233"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+<small style="margin-top: -25px; display: block; line-height: 1.5;"><strong>Evaluation with real-world point clouds under environment changes.</strong> A handheld Livox Mid-360 LiDAR was used to capture the scene, and FAST-LIO was used to reconstruct two registered point clouds before and after the obstacles were rearranged. (a) Experimental scene. (b) Point cloud of the initial scene. (c) Online volumetric occupancy map reconstructed from (b) and used for the initial plan. (d) Updated occupancy map after switching the input to the second point cloud, where the original passage was blocked (red boxes). (e) Execution snapshots in Gazebo (time was measured from the onset of motion): the robot started with the initial plan, the map update blocked the original passage at t = 17 s, replanning produced a new feasible trajectory at t = 19 s, and the robot switched to it and continued to the goal.</small></p>
+</div>
+
+    
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://yichengchen.com/publication/hierarchical-multi-link-planner/&amp;text=Hierarchical%20Trajectory%20Planning%20of%20Floating-Base%20Multi-Link%20Robot%20for%20Maneuvering%20in%20Confined%20Environments" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://yichengchen.com/publication/hierarchical-multi-link-planner/&amp;t=Hierarchical%20Trajectory%20Planning%20of%20Floating-Base%20Multi-Link%20Robot%20for%20Maneuvering%20in%20Confined%20Environments" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Hierarchical%20Trajectory%20Planning%20of%20Floating-Base%20Multi-Link%20Robot%20for%20Maneuvering%20in%20Confined%20Environments&amp;body=https://yichengchen.com/publication/hierarchical-multi-link-planner/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://yichengchen.com/publication/hierarchical-multi-link-planner/&amp;title=Hierarchical%20Trajectory%20Planning%20of%20Floating-Base%20Multi-Link%20Robot%20for%20Maneuvering%20in%20Confined%20Environments" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Hierarchical%20Trajectory%20Planning%20of%20Floating-Base%20Multi-Link%20Robot%20for%20Maneuvering%20in%20Confined%20Environments%20https://yichengchen.com/publication/hierarchical-multi-link-planner/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://yichengchen.com/publication/hierarchical-multi-link-planner/&amp;title=Hierarchical%20Trajectory%20Planning%20of%20Floating-Base%20Multi-Link%20Robot%20for%20Maneuvering%20in%20Confined%20Environments" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://yichengchen.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu80e9cefbb643567336bc6b5bc94511d0_569741_270x270_fill_q100_lanczos_center.jpg" alt="Yicheng Chen"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://yichengchen.com/">Yicheng Chen</a></h5>
+      <h6 class="card-subtitle">PhD student in robotics</h6>
+      <p class="card-text">I am interested in motion planning problems in aerial robotics.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:yicheng@buaa.edu.cn" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=aGfxYDYAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/Amos-Chen98" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/yichengchen-edu" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b4708d4364577c16ab7001b265a063a4.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/en/js/wowchemy.min.0bbfbc328b78e56ce289cb254c1578c5.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>
