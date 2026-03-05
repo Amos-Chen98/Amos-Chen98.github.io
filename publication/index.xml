@@ -5,7 +5,7 @@
     <link>https://yichengchen.com/publication/</link>
       <atom:link href="https://yichengchen.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yichengchen.com/media/icon_hu0ee3cac1b031394232b0fce022e2944b_69873_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments</title>
       <link>https://yichengchen.com/publication/hierarchical-multi-link-planner/</link>
-      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://yichengchen.com/publication/hierarchical-multi-link-planner/</guid>
       <description>
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -110,6 +110,14 @@
 
 &lt;small style=&#34;margin-top: -25px; display: block; line-height: 1.5;&#34;&gt;&lt;strong&gt;Evaluation with real-world point clouds under environment changes.&lt;/strong&gt; A handheld Livox Mid-360 LiDAR was used to capture the scene, and FAST-LIO was used to reconstruct two registered point clouds before and after the obstacles were rearranged. (a) Experimental scene. (b) Point cloud of the initial scene. (c) Online volumetric occupancy map reconstructed from (b) and used for the initial plan. (d) Updated occupancy map after switching the input to the second point cloud, where the original passage was blocked (red boxes). (e) Execution snapshots in Gazebo (time was measured from the onset of motion): the robot started with the initial plan, the map update blocked the original passage at t = 17 s, replanning produced a new feasible trajectory at t = 19 s, and the robot switched to it and continued to the goal.&lt;/small&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Learning Agile and Robust Omnidirectional Aerial Motion on Overactuated Tiltable-Quadrotors</title>
+      <link>https://yichengchen.com/publication/learning-omni/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://yichengchen.com/publication/learning-omni/</guid>
+      <description></description>
     </item>
     
     <item>
