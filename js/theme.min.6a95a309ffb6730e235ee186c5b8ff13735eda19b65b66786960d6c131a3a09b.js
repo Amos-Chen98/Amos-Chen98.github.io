@@ -1,0 +1,1 @@
+(()=>{document.documentElement.classList.add("js");let e="system";try{e=localStorage.getItem("color-theme")||"system"}catch{}["system","light","dark"].includes(e)||(e="system");const t=e==="dark"||e==="system"&&matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.dataset.theme=t?"dark":"light",document.documentElement.dataset.themePreference=e})()
