@@ -1,1 +1,87 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Publications on Yicheng Chen</title><link>https://yichengchen.com/publication/</link><description>Recent content in Publications on Yicheng Chen</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yichengchen.com/publication/index.xml" rel="self" type="application/rss+xml"/><item><title>Effector-Centric NMPC of Tiltable Multirotors for Offset-Free Omnidirectional Aerial Manipulation</title><link>https://yichengchen.com/publication/effector-centric-nmpc/</link><pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/effector-centric-nmpc/</guid><description/></item><item><title>CoFL-S: Spatially Queryable Sector Flow Fields for Local Language-Conditioned Navigation</title><link>https://yichengchen.com/publication/cofl-s/</link><pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/cofl-s/</guid><description/></item><item><title>CoFL: Continuous Flow Fields for Language-Conditioned Navigation</title><link>https://yichengchen.com/publication/cofl/</link><pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/cofl/</guid><description/></item><item><title>Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments</title><link>https://yichengchen.com/publication/hierarchical-multi-link-planner/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/hierarchical-multi-link-planner/</guid><description>A planning framework for floating-base multi-link robots that has been demonstrated on a real robot to generate continuous, collision-free, and dynamically feasible trajectories directly from raw point-cloud inputs, without relying on handcrafted obstacle models.</description></item><item><title>Learning Agile and Robust Omnidirectional Aerial Motion on Overactuated Tiltable-Quadrotors</title><link>https://yichengchen.com/publication/learning-omni/</link><pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/learning-omni/</guid><description/></item><item><title>Design, Modeling and Direction Control of a Wire-Driven Robotic Fish Based on a 2-DoF Crank-Slider Mechanism</title><link>https://yichengchen.com/publication/robotic-fish/</link><pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/robotic-fish/</guid><description/></item><item><title>Hierarchical Language Models for Semantic Navigation and Manipulation in an Aerial-Ground Robotic System</title><link>https://yichengchen.com/publication/hierarchical-language-models/</link><pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/hierarchical-language-models/</guid><description/></item><item><title>Learning to Initialize Trajectory Optimization for Vision-Based Autonomous Flight in Unknown Environments</title><link>https://yichengchen.com/publication/neo-planner/</link><pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/neo-planner/</guid><description>We introduce NEO-Planner, which uses a neural network to initialize trajectory optimization for autonomous drones, cutting computation by 26% without sacrificing quality.</description></item><item><title>Adaptively Dynamic RRT*-Connect: Path Planning for UAVs Against Dynamic Obstacles</title><link>https://yichengchen.com/publication/ad-rrtstar/</link><pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/ad-rrtstar/</guid><description>An RRT-based path planning algorithm enables UAVs to replan safe paths when dynamic threats emerge.</description></item><item><title>Multi-UAV Mobile Edge Computing and Path Planning Platform Based on Reinforcement Learning</title><link>https://yichengchen.com/publication/mec/</link><pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/mec/</guid><description>A novel multi-UAV mobile edge computing framework, aiming to provide better Quality-of-Service and path planning based on reinforcement learning.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Publications on Yicheng Chen</title>
+		<link>https://yichengchen.com/publication/</link>
+		<description>Recent content in Publications on Yicheng Chen</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yichengchen.com/publication/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Effector-Centric NMPC of Tiltable Multirotors for Offset-Free Omnidirectional Aerial Manipulation</title>
+				<link>https://yichengchen.com/publication/effector-centric-nmpc/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/effector-centric-nmpc/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>CoFL-S: Spatially Queryable Sector Flow Fields for Local Language-Conditioned Navigation</title>
+				<link>https://yichengchen.com/publication/cofl-s/</link>
+				<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/cofl-s/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>CoFL: Continuous Flow Fields for Language-Conditioned Navigation</title>
+				<link>https://yichengchen.com/publication/cofl/</link>
+				<pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/cofl/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Hierarchical Trajectory Planning of Floating-Base Multi-Link Robot for Maneuvering in Confined Environments</title>
+				<link>https://yichengchen.com/publication/hierarchical-multi-link-planner/</link>
+				<pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/hierarchical-multi-link-planner/</guid>
+				<description>A planning framework for floating-base multi-link robots that has been demonstrated on a real robot to generate continuous, collision-free, and dynamically feasible trajectories directly from raw point-cloud inputs, without relying on handcrafted obstacle models.</description>
+			</item>
+			<item>
+				<title>Learning Agile and Robust Omnidirectional Aerial Motion on Overactuated Tiltable-Quadrotors</title>
+				<link>https://yichengchen.com/publication/learning-omni/</link>
+				<pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/learning-omni/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Design, Modeling and Direction Control of a Wire-Driven Robotic Fish Based on a 2-DoF Crank-Slider Mechanism</title>
+				<link>https://yichengchen.com/publication/robotic-fish/</link>
+				<pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/robotic-fish/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Hierarchical Language Models for Semantic Navigation and Manipulation in an Aerial-Ground Robotic System</title>
+				<link>https://yichengchen.com/publication/hierarchical-language-models/</link>
+				<pubDate>Sun, 26 Oct 2025 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/hierarchical-language-models/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Learning to Initialize Trajectory Optimization for Vision-Based Autonomous Flight in Unknown Environments</title>
+				<link>https://yichengchen.com/publication/neo-planner/</link>
+				<pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/neo-planner/</guid>
+				<description>We introduce NEO-Planner, which uses a neural network to initialize trajectory optimization for autonomous drones, cutting computation by 26% without sacrificing quality.</description>
+			</item>
+			<item>
+				<title>Adaptively Dynamic RRT*-Connect: Path Planning for UAVs Against Dynamic Obstacles</title>
+				<link>https://yichengchen.com/publication/ad-rrtstar/</link>
+				<pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/ad-rrtstar/</guid>
+				<description>An RRT-based path planning algorithm enables UAVs to replan safe paths when dynamic threats emerge.</description>
+			</item>
+			<item>
+				<title>Multi-UAV Mobile Edge Computing and Path Planning Platform Based on Reinforcement Learning</title>
+				<link>https://yichengchen.com/publication/mec/</link>
+				<pubDate>Tue, 08 Jun 2021 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/mec/</guid>
+				<description>A novel multi-UAV mobile edge computing framework, aiming to provide better Quality-of-Service and path planning based on reinforcement learning.</description>
+			</item>
+	</channel>
+</rss>

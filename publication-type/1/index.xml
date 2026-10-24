@@ -1,1 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>1 on Yicheng Chen</title><link>https://yichengchen.com/publication-type/1/</link><description>Recent content in 1 on Yicheng Chen</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://yichengchen.com/publication-type/1/index.xml" rel="self" type="application/rss+xml"/><item><title>CoFL-S: Spatially Queryable Sector Flow Fields for Local Language-Conditioned Navigation</title><link>https://yichengchen.com/publication/cofl-s/</link><pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/cofl-s/</guid><description/></item><item><title>Design, Modeling and Direction Control of a Wire-Driven Robotic Fish Based on a 2-DoF Crank-Slider Mechanism</title><link>https://yichengchen.com/publication/robotic-fish/</link><pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/robotic-fish/</guid><description/></item><item><title>Learning to Initialize Trajectory Optimization for Vision-Based Autonomous Flight in Unknown Environments</title><link>https://yichengchen.com/publication/neo-planner/</link><pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/neo-planner/</guid><description>We introduce NEO-Planner, which uses a neural network to initialize trajectory optimization for autonomous drones, cutting computation by 26% without sacrificing quality.</description></item><item><title>Adaptively Dynamic RRT*-Connect: Path Planning for UAVs Against Dynamic Obstacles</title><link>https://yichengchen.com/publication/ad-rrtstar/</link><pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate><guid>https://yichengchen.com/publication/ad-rrtstar/</guid><description>An RRT-based path planning algorithm enables UAVs to replan safe paths when dynamic threats emerge.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>1 on Yicheng Chen</title>
+		<link>https://yichengchen.com/publication-type/1/</link>
+		<description>Recent content in 1 on Yicheng Chen</description>
+		<generator>Hugo</generator>
+		<language>en-US</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://yichengchen.com/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>CoFL-S: Spatially Queryable Sector Flow Fields for Local Language-Conditioned Navigation</title>
+				<link>https://yichengchen.com/publication/cofl-s/</link>
+				<pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/cofl-s/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Design, Modeling and Direction Control of a Wire-Driven Robotic Fish Based on a 2-DoF Crank-Slider Mechanism</title>
+				<link>https://yichengchen.com/publication/robotic-fish/</link>
+				<pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/robotic-fish/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Learning to Initialize Trajectory Optimization for Vision-Based Autonomous Flight in Unknown Environments</title>
+				<link>https://yichengchen.com/publication/neo-planner/</link>
+				<pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/neo-planner/</guid>
+				<description>We introduce NEO-Planner, which uses a neural network to initialize trajectory optimization for autonomous drones, cutting computation by 26% without sacrificing quality.</description>
+			</item>
+			<item>
+				<title>Adaptively Dynamic RRT*-Connect: Path Planning for UAVs Against Dynamic Obstacles</title>
+				<link>https://yichengchen.com/publication/ad-rrtstar/</link>
+				<pubDate>Sat, 16 Jul 2022 00:00:00 +0000</pubDate>
+				<guid>https://yichengchen.com/publication/ad-rrtstar/</guid>
+				<description>An RRT-based path planning algorithm enables UAVs to replan safe paths when dynamic threats emerge.</description>
+			</item>
+	</channel>
+</rss>
